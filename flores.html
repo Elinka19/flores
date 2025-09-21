@@ -29,13 +29,19 @@
   </style>
 </head>
 <body>
-  <h1 id="mensaje">🌼 ¡Feliz día de las flores amarillas víbora! 🌼</h1>
-  <div class="flores">💛💛💛💛💛</div>
+  <h1 id="mensaje">🌼 ¡Feliz día de las flores amarillas víboras! 🌼</h1>
+  <div class="flores">🌼🌼🌼🌼🌼</div>
 
   <script>
     // Obtener nombre desde la URL ?nombre=Camila
     const params = new URLSearchParams(window.location.search);
     const nombre = params.get("nombre") || "Amiga";
-    document.getEleme
+    document.getElementById("mensaje").innerText =
+      `🌼 ${nombre}, estas flores amarillas son para ti 🌼`;
+  </script>
+</body>
+</html>
+
+
 
 
