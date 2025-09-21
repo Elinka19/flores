@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>🌼 Flores Amarillas 🌼</title>
+  <style>
+    body {
+      background: #fff8dc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      color: #e4b100;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+    .flores {
+      font-size: 3rem;
+      animation: flotar 3s infinite ease-in-out;
+    }
+    @keyframes flotar {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <h1 id="mensaje">🌼 ¡Feliz día de las flores amarillas! 🌼</h1>
+  <div class="flores">💛💛💛💛💛</div>
+
+  <script>
+    // Obtener nombre desde la URL ?nombre=Camila
+    const params = new URLSearchParams(window.location.search);
+    const nombre = params.get("nombre") || "Amiga";
+    document.getEleme
